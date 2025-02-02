@@ -1,5 +1,6 @@
 function moveRandoEl(elm) {
-    elm.style.position = "absolute"; // Ensure absolute positioning
+    elm.style.position = "absolute"; // Ensure it can move
+
     let maxWidth = window.innerWidth - elm.clientWidth;
     let maxHeight = window.innerHeight - elm.clientHeight;
 
@@ -13,5 +14,5 @@ function moveRandoEl(elm) {
 const moveRandom = document.querySelector("#move-random");
 
 moveRandom.addEventListener("mouseenter", function (e) {
-    moveRandoEl(e.target); // Correct function call
+    moveRandoEl(e.target);
 });
