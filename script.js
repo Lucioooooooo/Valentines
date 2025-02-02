@@ -1,11 +1,6 @@
-function moveRandoEl(elm) {
-    elm.style.position = "abosolute";
-    elm.style.top = Math.floor(Math.random() * 90 + 5) + "%";
-    elm.style.left= Math.floor(Math.random() * 90 + 5) + "%";
+function moveButton() {
+    var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+    var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+    document.getElementById('noButton').style.left = `${x}px`;
+    document.getElementById('noButton').style.top = `${y}px`;
 }
-
-const moveRandom = document.querySelector("#move-random");
-
-moveRandom.addEventListener("mouseenter", function(e) {
-    moveRandomEl(e.target);
-});
