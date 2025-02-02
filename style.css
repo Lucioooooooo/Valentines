@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,8 +12,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #ADD8E6;
-    position: relative; /* Ensures absolute elements stay inside */
-    overflow: hidden; /* Prevents button from jumping outside */
 }
 
 .container {
@@ -24,7 +22,6 @@ body {
     gap: 20px;
     max-width: 500px;
     margin: 20px;
-    position: relative; /* Keeps elements inside */
 }
 
 .container .tenor-gif-embed {
@@ -34,7 +31,6 @@ body {
 .container .btn {
     display: flex;
     gap: 25px;
-    position: relative; /* Keeps the Yes button in place */
 }
 
 .btn a {
@@ -44,16 +40,4 @@ body {
     padding: 10px 25px;
     border-radius: 8px;
     box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
-    transition: transform 0.2s ease-in-out;
-}
-
-/* Default "No" button styling */
-#noButton {
-    position: relative; /* Initially positioned normally */
-    cursor: pointer;
-}
-
-/* When "No" moves, it should stay inside the screen */
-#noButton.moving {
-    position: absolute !important;
 }
