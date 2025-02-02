@@ -1,50 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ask Her Out</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0" />
+        <title> Ask Her Out</title>
 
-    <link rel="stylesheet" href="./style.css" />
-</head>
-<body>
-    <div class="container"> 
-        <div class="tenor-gif-embed"
-            data-postid="2737858187329719559"
-            data-share-method="host"
-            data-aspect-ratio="0.986842"
-            data-width="100%">
-            <a href="https://tenor.com/view/cinnamon-cinnamon-roll-sanrio-cute-emojis-gif-2737858187329719559"></a>
-            from <a href="https://tenor.com/search/cinnamon-stickers"></a>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="container"> 
+             <div class="tenor-gif-embed"
+             data-postid="2737858187329719559" data-share-method="host" 
+             data-aspect-ratio="0.986842" data-width="100%">
+             <a href="https://tenor.com/view/cinnamon-cinnamon-roll-sanrio-cute-emojis-gif-2737858187329719559"></a>
+             from <a href="https://tenor.com/search/cinnamon-stickers"></a>
         </div> 
 
-        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+         <script type="text/javascript" 
+         async src="https://tenor.com/embed.js"></script>
+            <h1> Will you be my valentine?</h1>
 
-        <h1>Will you be my Valentine?</h1>
-
-        <div class="btn">
-            <a href="yes.html">Yes</a>
-            <a href="no1.html" id="noButton" onmouseover="moveButton()">No</a>
+            <div class="btn">
+                <a href="yes.html"> Yes</a>
+                <a href="no1.html">No</a>
+            </div>
         </div>
-    </div>
-
-    <script>
-        function moveButton() {
-            var button = document.getElementById('noButton');
-
-            // Get screen size limits
-            var maxX = window.innerWidth - button.offsetWidth;
-            var maxY = window.innerHeight - button.offsetHeight;
-
-            // Random position
-            var x = Math.random() * maxX;
-            var y = Math.random() * maxY;
-
-            // Apply position
-            button.style.position = "absolute";
-            button.style.left = `${x}px`;
-            button.style.top = `${y}px`;
-        }
-    </script>
-</body>
-</html
+    </body>
+</html>
