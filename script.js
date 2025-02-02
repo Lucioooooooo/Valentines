@@ -1,7 +1,7 @@
 function moveRandoEl(elm) {
     elm.style.position = "absolute";
-    elm.style.top = Math.floor(Math.random() * 90 + 5) + "%";
-    elm.style.left= Math.floor(Math.random() * 90 + 5) + "%";
+    elm.style.top = Math.floor(Math.random() * 90 + 5) + "px";
+    elm.style.left= Math.floor(Math.random() * 90 + 5) + "px";
 }
 
 const moveRandom = document.querySelector("#move-random");
