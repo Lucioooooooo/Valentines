@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,8 +12,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #ADD8E6;
-    position: relative; /* Allows absolute positioning inside the body */
-    overflow: hidden; /* Prevents button from moving out of view */
 }
 
 .container {
@@ -33,7 +31,6 @@ body {
 .container .btn {
     display: flex;
     gap: 25px;
-    position: relative; /* Keeps "Yes" button positioned correctly */
 }
 
 .btn a {
@@ -42,19 +39,5 @@ body {
     background-color: #fff;
     padding: 10px 25px;
     border-radius: 8px;
-    box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.3);
-}
-
-/* Ensure 'No' button starts positioned properly */
-#move-random {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: red;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    position: absolute; /* Allows it to move anywhere */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centers it initially */
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
 }
